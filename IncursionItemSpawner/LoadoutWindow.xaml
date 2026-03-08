@@ -1,0 +1,65 @@
+﻿<Window x:Class="IncursionItemSpawner.LoadoutWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+        Title="Loadout Designer" Height="650" Width="700" 
+        Background="Transparent">
+
+    <Grid Margin="20">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0" Margin="0,0,20,0">
+            <TextBlock Text="SAVED LOADOUTS" Foreground="White" FontWeight="Bold" Margin="0,0,0,10"/>
+            <ListBox x:Name="LoadoutListBox" Height="400" SelectionChanged="LoadoutListBox_SelectionChanged" Background="#20FFFFFF" Foreground="White"/>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,0">
+                <ui:Button Content="Refresh" Click="RefreshLoadoutList_Click" Margin="0,0,5,0" BorderBrush="White"/>
+                <ui:Button Appearance="Danger" Click="DeleteLoadout_Click" ToolTip="Delete selected Loadout" BorderBrush="White">
+                    <ui:Button.Content>
+                        <ui:SymbolIcon Symbol="Delete24"/>
+                    </ui:Button.Content>
+                </ui:Button>
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel Grid.Column="1">
+            <TextBlock Text="CREATE/EDIT LOADOUT" Foreground="White" FontSize="18" FontWeight="Bold" Margin="0,0,0,10"/>
+
+            <ui:TextBox x:Name="LoadoutNameBox" PlaceholderText="Enter Loadout Name" Margin="0,0,0,10"/>
+
+            <ui:TextBlock Text="Base Gear" Foreground="White" FontTypography="Caption" Margin="0,10,0,5"/>
+            <ComboBox x:Name="HelmetBox" Text="Select Helmet"/>
+            <ComboBox x:Name="RigBox" Margin="0,10,0,0" Text="Select Rig"/>
+            <ComboBox x:Name="BackpackBox" Margin="0,10,0,0" Text="Select Backpack"/>
+
+            <ui:TextBlock Text="Weapon &amp; Attachments" Foreground="White" FontTypography="Caption" Margin="0,20,0,5"/>
+            <ComboBox x:Name="WeaponBox" Text="Select Primary Weapon"/>
+
+            <Grid Margin="0,10,0,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <ComboBox x:Name="MuzzleBox" Grid.Row="0" Grid.Column="0" Margin="0,0,5,10" Text="Muzzle"/>
+                <ComboBox x:Name="GripBox" Grid.Row="0" Grid.Column="1" Margin="5,0,0,10" Text="Grip" />
+                <ComboBox x:Name="OpticBox" Grid.Row="1" Grid.Column="0" Margin="0,0,5,0" Text="Scope"/>
+                <ComboBox x:Name="MagazineBox" Grid.Row="1" Grid.Column="1" Margin="5,0,0,0" Text="Magazine"/>
+            </Grid>
+
+            <ui:TextBox x:Name="AttachmentsBox" PlaceholderText="Other IDs (Misc, separated by commas)" Margin="0,15,0,0"/>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,25,0,0">
+                <ui:Button Content="SAVE LOADOUT" Appearance="Secondary" Click="Save_Click" Margin="0,0,15,0" BorderBrush="White"/>
+                <ui:Button Content="GENERATE" Appearance="Primary" Click="Generate_Click" BorderBrush="White"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
