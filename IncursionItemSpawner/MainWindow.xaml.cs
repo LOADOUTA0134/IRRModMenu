@@ -16,7 +16,6 @@ namespace IncursionItemSpawner
     // WICHTIG: Erbe von UiWindow für das Design
     public partial class MainWindow : Window
     {
-        // Wir nennen die Liste MyItemList, damit dein CreateLoadout-Aufruf funktioniert
         public List<Item> MyItemList { get; set; } = new List<Item>();
 
         [DllImport("user32.dll")]
@@ -138,7 +137,6 @@ namespace IncursionItemSpawner
 
         private void CreateLoadout(object sender, RoutedEventArgs e)
         {
-            // Jetzt wird MyItemList korrekt übergeben
             var loadoutDesigner = new LoadoutWindow(this.MyItemList);
 
             if (loadoutDesigner.ShowDialog() == true)
