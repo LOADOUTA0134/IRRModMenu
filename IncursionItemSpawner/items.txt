@@ -607,6 +607,10 @@ Loot|Walkie_Talkie
 Loot|WD40_Spray
 Loot|Weather_Device
 Loot|520TVL_CCTV_Mini_Camera
+Loot|Canteen
+Loot|Antique_Water_Pitcher
+Loot|Fuel
+Loot|Motherboard
 Key|Bunker_Compact_Safe_Key
 Key|Bunker_Elevator_Room_Key
 Key|Bunker_Extraction_Room_Key

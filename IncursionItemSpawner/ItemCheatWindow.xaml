@@ -1,0 +1,27 @@
+﻿<Window x:Class="IncursionItemSpawner.ItemCheatWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+        Title="Item Spawner" Height="600" Width="500"
+        Background="Transparent">
+    <Grid Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <ui:TextBox Grid.Row="0" x:Name="SearchBox" PlaceholderText="Search items..." TextChanged="SearchChanged" Margin="0,0,0,10"/>
+        <ComboBox Grid.Row="1" x:Name="CategoryBox" SelectionChanged="CategoryChanged" Margin="0,0,0,10" HorizontalAlignment="Stretch"/>
+
+        <ui:Card Grid.Row="2" Margin="0,0,0,10" Padding="0">
+            <ListBox x:Name="ItemList" Background="Transparent" BorderThickness="0" SelectionChanged="ItemClicked"/>
+        </ui:Card>
+
+        <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Right">
+            <ui:TextBox x:Name="AmountBox" Text="1" Width="100" Margin="0,0,10,0" />
+            <ui:Button x:Name="ExecuteButton" Content="EXECUTE" Appearance="Primary" Click="ExecuteCommand" />
+        </StackPanel>
+    </Grid>
+</Window>

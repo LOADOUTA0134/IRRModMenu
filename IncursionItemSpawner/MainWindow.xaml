@@ -1,47 +1,13 @@
 ﻿<Window x:Class="IncursionItemSpawner.MainWindow"
-             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
-             Title="Incursion Item Spawner" 
-             Height="600" Width="500"
-             Background="Transparent">
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+        Title="Incursion Menu" Height="300" Width="400">
+    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+        <TextBlock Text="CHOOSE FUNCTION" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,20"/>
 
-    <Grid Margin="20" >
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="Auto"/>
-        </Grid.RowDefinitions>
-
-        <ui:TextBox Grid.Row="0" x:Name="SearchBox"
-                    PlaceholderText="Search items..."
-                    TextChanged="SearchChanged" 
-                    Margin="0,0,0,10"/>
-
-        <ComboBox Grid.Row="1" x:Name="CategoryBox"
-                     SelectionChanged="CategoryChanged" 
-                     Margin="0,0,0,10"
-                     HorizontalAlignment="Stretch"/>
-
-        <ui:Card Grid.Row="2" Margin="0,0,0,10" Padding="0">
-            <ListBox x:Name="ItemList" 
-                     Background="Transparent" 
-                     BorderThickness="0"
-                     SelectionChanged="ItemClicked"/>
-        </ui:Card>
-
-        <StackPanel Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Right">
-
-            <ui:TextBox x:Name="AmountBox" Text="1" Width="150" PlaceholderText="Quantity" Margin="20,0,20,0" />
-
-            <ui:Button x:Name="ExecuteButton" Content="EXECUTE" 
-                       Appearance="Primary"
-                       Click="ExecuteCommand" Height="32" />
-
-            <ui:Button x:Name="CreateLoadoutButton" Content="CREATE LOADOUT"
-                       Appearance="Primary"
-                       Click="CreateLoadout" Height="32" Margin="20,0,0,0" />
-        </StackPanel>
-    </Grid>
+        <ui:Button Content="ITEM CHEAT" Icon="Box24" Width="200" Height="50" Click="OpenItemSpawner_Click"/>
+        <ui:Button Content="LOADOUT DESIGNER" Icon="Shield24" Width="200" Height="50" Click="OpenLoadout_Click"/>
+        <ui:Button Content="FACTIONS" Icon="People24" Width="200" Height="50" Click="OpenFactions_Click"/>
+    </StackPanel>
 </Window>

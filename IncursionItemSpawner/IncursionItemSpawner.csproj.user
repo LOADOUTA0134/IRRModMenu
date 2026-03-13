@@ -7,11 +7,23 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="FactionsWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ItemCheatWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="LoadoutWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="FactionsWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ItemCheatWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="LoadoutWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
