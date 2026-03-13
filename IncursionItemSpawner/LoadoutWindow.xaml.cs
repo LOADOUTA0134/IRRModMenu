@@ -65,7 +65,6 @@ namespace IncursionItemSpawner
             GripBox.SelectedItem = loadout.Grip;
             OpticBox.SelectedItem = loadout.Optic;
             MagazineBox.SelectedItem = loadout.Magazine;
-            AttachmentsBox.Text = loadout.ExtraAttachments;
         }
 
         private void Save_Click(object sender, RoutedEventArgs e)
@@ -81,8 +80,7 @@ namespace IncursionItemSpawner
                 Muzzle = MuzzleBox.SelectedItem?.ToString(),
                 Grip = GripBox.SelectedItem?.ToString(),
                 Optic = OpticBox.SelectedItem?.ToString(),
-                Magazine = MagazineBox.SelectedItem?.ToString(),
-                ExtraAttachments = AttachmentsBox.Text
+                Magazine = MagazineBox.SelectedItem?.ToString()
             };
 
             File.WriteAllText(loadout.Name + ".json", JsonSerializer.Serialize(loadout, new JsonSerializerOptions { WriteIndented = true }));
@@ -105,19 +103,6 @@ namespace IncursionItemSpawner
                 }
             }
 
-            // 2. Manuelle Attachments verarbeiten
-            if (!string.IsNullOrWhiteSpace(AttachmentsBox.Text))
-            {
-                var manualItems = AttachmentsBox.Text.Split(',')
-                                               .Select(s => s.Trim())
-                                               .Where(s => !string.IsNullOrEmpty(s));
-
-                foreach (var item in manualItems)
-                {
-                    selectedIds.Add($"{item} 1");
-                }
-            }
-
             if (selectedIds.Count == 0)
             {
                 System.Windows.MessageBox.Show("Select at least one item");
@@ -131,7 +116,6 @@ namespace IncursionItemSpawner
         }
         private void DeleteLoadout_Click(object sender, RoutedEventArgs e)
         {
-            // Prüfen, ob überhaupt ein Loadout ausgewählt ist
             if (LoadoutListBox.SelectedItem == null)
             {
                 System.Windows.MessageBox.Show("Please select a loadout to delete.");
@@ -141,7 +125,6 @@ namespace IncursionItemSpawner
             string loadoutName = LoadoutListBox.SelectedItem.ToString();
             string path = loadoutName + ".json";
 
-            // Bestätigungs-Dialog
             var result = System.Windows.MessageBox.Show($"Are you sure you want to delete '{loadoutName}'?",
                                                         "Confirm Delete",
                                                         MessageBoxButton.YesNo,
@@ -155,7 +138,6 @@ namespace IncursionItemSpawner
                     {
                         File.Delete(path);
 
-                        // UI zurücksetzen
                         LoadoutNameBox.Clear();
                         RefreshLoadoutList_Click(null, null);
                         System.Windows.MessageBox.Show("Loadout deleted!");

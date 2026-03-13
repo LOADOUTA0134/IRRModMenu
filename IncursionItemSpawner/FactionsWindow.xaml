@@ -15,10 +15,12 @@
                         <ColumnDefinition Width="*"/>
                         <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
                     </Grid.ColumnDefinitions>
                     <TextBlock Text="VLF" VerticalAlignment="Center" FontSize="16"/>
-                    <Slider x:Name="VLFLevel" Grid.Column="1" Value="1" Minimum="1" Maximum="4" TickFrequency="1" IsSnapToTickEnabled="True" TickPlacement="BottomRight" Width="150" Margin="10,0"/>
-                    <ui:Button Grid.Column="2" Content="SET LEVEL" Click="SetFaction_Click" Tag="VLF" Appearance="Primary"/>
+                    <TextBlock x:Name="VLFLevelText" Grid.Column="1" VerticalAlignment="Center" FontSize="16" Margin="10,0"/>
+                    <Slider x:Name="VLFLevel" Grid.Column="2" Value="1" Minimum="1" Maximum="4" TickFrequency="1" IsSnapToTickEnabled="True" TickPlacement="BottomRight" Width="150" Margin="10,0" ValueChanged="VLFLevel_ValueChanged" />
+                    <ui:Button Grid.Column="3" Content="SET LEVEL" Click="SetFaction_Click" Tag="VLF" Appearance="Primary"/>
                 </Grid>
             </ui:Card>
 
@@ -26,12 +28,14 @@
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition Width="Auto"/>
                     </Grid.ColumnDefinitions>
-                    <TextBlock Text="UCIS" VerticalAlignment="Center" FontSize="16"/>
-                    <Slider x:Name="UCISLevel" Grid.Column="1" Value="1" Minimum="1" Maximum="4" TickFrequency="1" IsSnapToTickEnabled="True" TickPlacement="BottomRight" Width="150" Margin="10,0"/>
-                    <ui:Button Grid.Column="2" Content="SET LEVEL" Click="SetFaction_Click" Tag="UCIS" Appearance="Primary"/>
+                    <TextBlock Text="UICS" VerticalAlignment="Center" FontSize="16"/>
+                    <TextBlock x:Name="UICSLevelText" Grid.Column="1" VerticalAlignment="Center" FontSize="16" Margin="10,0"/>
+                    <Slider x:Name="UICSLevel" Grid.Column="2" Value="1" Minimum="1" Maximum="4" TickFrequency="1" IsSnapToTickEnabled="True" TickPlacement="BottomRight" Width="150" Margin="10,0" ValueChanged="UICSLevel_ValueChanged"/>
+                    <ui:Button Grid.Column="3" Content="SET LEVEL" Click="SetFaction_Click" Tag="UICS" Appearance="Primary"/>
                 </Grid>
             </ui:Card>
 
@@ -39,12 +43,14 @@
                 <Grid>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition Width="Auto"/>
                         <ColumnDefinition Width="Auto"/>
                     </Grid.ColumnDefinitions>
                     <TextBlock Text="IGC" VerticalAlignment="Center" FontSize="16"/>
-                    <Slider x:Name="IGCLevel" Grid.Column="1" Value="1" Minimum="1" Maximum="4" TickFrequency="1" IsSnapToTickEnabled="True" TickPlacement="BottomRight" Width="150" Margin="10,0"/>
-                    <ui:Button Grid.Column="2" Content="SET LEVEL" Click="SetFaction_Click" Tag="IGC" Appearance="Primary"/>
+                    <TextBlock x:Name="IGCLevelText" Grid.Column="1" Text="Level 1" VerticalAlignment="Center" FontSize="16" Margin="10,0"/>
+                    <Slider x:Name="IGCLevel" Grid.Column="2" Value="1" Minimum="1" Maximum="4" TickFrequency="1" IsSnapToTickEnabled="True" TickPlacement="BottomRight" Width="150" Margin="10,0" ValueChanged="IGCLevel_ValueChanged"/>
+                    <ui:Button Grid.Column="3" Content="SET LEVEL" Click="SetFaction_Click" Tag="IGC" Appearance="Primary"/>
                 </Grid>
             </ui:Card>
         </StackPanel>

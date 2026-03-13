@@ -3,39 +3,39 @@
   "WorkspaceRootPath": "E:\\Programmieren\\IncursionItemSpawner\\IncursionItemSpawner\\IRRModMenu\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{BE36A963-2957-4F44-811E-3F5DEA2D72F4}|IncursionItemSpawner\\IncursionItemSpawner.csproj|E:\\Programmieren\\IncursionItemSpawner\\IncursionItemSpawner\\IRRModMenu\\incursionitemspawner\\loadoutwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE36A963-2957-4F44-811E-3F5DEA2D72F4}|IncursionItemSpawner\\IncursionItemSpawner.csproj|solutionrelative:incursionitemspawner\\loadoutwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE36A963-2957-4F44-811E-3F5DEA2D72F4}|IncursionItemSpawner\\IncursionItemSpawner.csproj|E:\\Programmieren\\IncursionItemSpawner\\IncursionItemSpawner\\IRRModMenu\\incursionitemspawner\\loadoutwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BE36A963-2957-4F44-811E-3F5DEA2D72F4}|IncursionItemSpawner\\IncursionItemSpawner.csproj|solutionrelative:incursionitemspawner\\loadoutwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE36A963-2957-4F44-811E-3F5DEA2D72F4}|IncursionItemSpawner\\IncursionItemSpawner.csproj|E:\\Programmieren\\IncursionItemSpawner\\IncursionItemSpawner\\IRRModMenu\\incursionitemspawner\\factionswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{BE36A963-2957-4F44-811E-3F5DEA2D72F4}|IncursionItemSpawner\\IncursionItemSpawner.csproj|solutionrelative:incursionitemspawner\\factionswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BE36A963-2957-4F44-811E-3F5DEA2D72F4}|IncursionItemSpawner\\IncursionItemSpawner.csproj|e:\\programmieren\\incursionitemspawner\\incursionitemspawner\\irrmodmenu\\incursionitemspawner\\factionswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BE36A963-2957-4F44-811E-3F5DEA2D72F4}|IncursionItemSpawner\\IncursionItemSpawner.csproj|solutionrelative:incursionitemspawner\\factionswindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BE36A963-2957-4F44-811E-3F5DEA2D72F4}|IncursionItemSpawner\\IncursionItemSpawner.csproj|e:\\programmieren\\incursionitemspawner\\incursionitemspawner\\irrmodmenu\\incursionitemspawner\\factionswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{BE36A963-2957-4F44-811E-3F5DEA2D72F4}|IncursionItemSpawner\\IncursionItemSpawner.csproj|solutionrelative:incursionitemspawner\\factionswindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE36A963-2957-4F44-811E-3F5DEA2D72F4}|IncursionItemSpawner\\IncursionItemSpawner.csproj|e:\\programmieren\\incursionitemspawner\\incursionitemspawner\\irrmodmenu\\incursionitemspawner\\itemcheatwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BE36A963-2957-4F44-811E-3F5DEA2D72F4}|IncursionItemSpawner\\IncursionItemSpawner.csproj|E:\\Programmieren\\IncursionItemSpawner\\IncursionItemSpawner\\IRRModMenu\\incursionitemspawner\\itemcheatwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BE36A963-2957-4F44-811E-3F5DEA2D72F4}|IncursionItemSpawner\\IncursionItemSpawner.csproj|solutionrelative:incursionitemspawner\\itemcheatwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BE36A963-2957-4F44-811E-3F5DEA2D72F4}|IncursionItemSpawner\\IncursionItemSpawner.csproj|e:\\programmieren\\incursionitemspawner\\incursionitemspawner\\irrmodmenu\\incursionitemspawner\\loadoutwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BE36A963-2957-4F44-811E-3F5DEA2D72F4}|IncursionItemSpawner\\IncursionItemSpawner.csproj|solutionrelative:incursionitemspawner\\loadoutwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE36A963-2957-4F44-811E-3F5DEA2D72F4}|IncursionItemSpawner\\IncursionItemSpawner.csproj|e:\\programmieren\\incursionitemspawner\\incursionitemspawner\\irrmodmenu\\incursionitemspawner\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{BE36A963-2957-4F44-811E-3F5DEA2D72F4}|IncursionItemSpawner\\IncursionItemSpawner.csproj|E:\\Programmieren\\IncursionItemSpawner\\IncursionItemSpawner\\IRRModMenu\\incursionitemspawner\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{BE36A963-2957-4F44-811E-3F5DEA2D72F4}|IncursionItemSpawner\\IncursionItemSpawner.csproj|solutionrelative:incursionitemspawner\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BE36A963-2957-4F44-811E-3F5DEA2D72F4}|IncursionItemSpawner\\IncursionItemSpawner.csproj|e:\\programmieren\\incursionitemspawner\\incursionitemspawner\\irrmodmenu\\incursionitemspawner\\itemcheatwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{BE36A963-2957-4F44-811E-3F5DEA2D72F4}|IncursionItemSpawner\\IncursionItemSpawner.csproj|E:\\Programmieren\\IncursionItemSpawner\\IncursionItemSpawner\\IRRModMenu\\incursionitemspawner\\itemcheatwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{BE36A963-2957-4F44-811E-3F5DEA2D72F4}|IncursionItemSpawner\\IncursionItemSpawner.csproj|solutionrelative:incursionitemspawner\\itemcheatwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BE36A963-2957-4F44-811E-3F5DEA2D72F4}|IncursionItemSpawner\\IncursionItemSpawner.csproj|e:\\programmieren\\incursionitemspawner\\incursionitemspawner\\irrmodmenu\\incursionitemspawner\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{BE36A963-2957-4F44-811E-3F5DEA2D72F4}|IncursionItemSpawner\\IncursionItemSpawner.csproj|E:\\Programmieren\\IncursionItemSpawner\\IncursionItemSpawner\\IRRModMenu\\incursionitemspawner\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BE36A963-2957-4F44-811E-3F5DEA2D72F4}|IncursionItemSpawner\\IncursionItemSpawner.csproj|solutionrelative:incursionitemspawner\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BE36A963-2957-4F44-811E-3F5DEA2D72F4}|IncursionItemSpawner\\IncursionItemSpawner.csproj|e:\\programmieren\\incursionitemspawner\\incursionitemspawner\\irrmodmenu\\incursionitemspawner\\loadoutwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{BE36A963-2957-4F44-811E-3F5DEA2D72F4}|IncursionItemSpawner\\IncursionItemSpawner.csproj|solutionrelative:incursionitemspawner\\loadoutwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE36A963-2957-4F44-811E-3F5DEA2D72F4}|IncursionItemSpawner\\IncursionItemSpawner.csproj|e:\\programmieren\\incursionitemspawner\\incursionitemspawner\\irrmodmenu\\incursionitemspawner\\items.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{BE36A963-2957-4F44-811E-3F5DEA2D72F4}|IncursionItemSpawner\\IncursionItemSpawner.csproj|E:\\Programmieren\\IncursionItemSpawner\\IncursionItemSpawner\\IRRModMenu\\incursionitemspawner\\items.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{BE36A963-2957-4F44-811E-3F5DEA2D72F4}|IncursionItemSpawner\\IncursionItemSpawner.csproj|solutionrelative:incursionitemspawner\\items.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
@@ -46,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -54,20 +54,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "FactionsWindow.xaml.cs",
               "DocumentMoniker": "E:\\Programmieren\\IncursionItemSpawner\\IncursionItemSpawner\\IRRModMenu\\IncursionItemSpawner\\FactionsWindow.xaml.cs",
               "RelativeDocumentMoniker": "IncursionItemSpawner\\FactionsWindow.xaml.cs",
               "ToolTip": "E:\\Programmieren\\IncursionItemSpawner\\IncursionItemSpawner\\IRRModMenu\\IncursionItemSpawner\\FactionsWindow.xaml.cs",
               "RelativeToolTip": "IncursionItemSpawner\\FactionsWindow.xaml.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAYwBwAAABCAAAA",
+              "ViewState": "AQIAAAUAAAAAAAAAAAAAABQAAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-13T13:48:54.092Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "FactionsWindow.xaml",
               "DocumentMoniker": "E:\\Programmieren\\IncursionItemSpawner\\IncursionItemSpawner\\IRRModMenu\\IncursionItemSpawner\\FactionsWindow.xaml",
               "RelativeDocumentMoniker": "IncursionItemSpawner\\FactionsWindow.xaml",
@@ -79,20 +79,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "LoadoutWindow.xaml.cs",
               "DocumentMoniker": "E:\\Programmieren\\IncursionItemSpawner\\IncursionItemSpawner\\IRRModMenu\\IncursionItemSpawner\\LoadoutWindow.xaml.cs",
               "RelativeDocumentMoniker": "IncursionItemSpawner\\LoadoutWindow.xaml.cs",
               "ToolTip": "E:\\Programmieren\\IncursionItemSpawner\\IncursionItemSpawner\\IRRModMenu\\IncursionItemSpawner\\LoadoutWindow.xaml.cs",
               "RelativeToolTip": "IncursionItemSpawner\\LoadoutWindow.xaml.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA8AAAA",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAAADYAAABLAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-13T14:01:47.495Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "LoadoutWindow.xaml",
               "DocumentMoniker": "E:\\Programmieren\\IncursionItemSpawner\\IncursionItemSpawner\\IRRModMenu\\IncursionItemSpawner\\LoadoutWindow.xaml",
               "RelativeDocumentMoniker": "IncursionItemSpawner\\LoadoutWindow.xaml",
@@ -104,19 +104,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "ItemCheatWindow.xaml",
               "DocumentMoniker": "E:\\Programmieren\\IncursionItemSpawner\\IncursionItemSpawner\\IRRModMenu\\IncursionItemSpawner\\ItemCheatWindow.xaml",
               "RelativeDocumentMoniker": "IncursionItemSpawner\\ItemCheatWindow.xaml",
               "ToolTip": "E:\\Programmieren\\IncursionItemSpawner\\IncursionItemSpawner\\IRRModMenu\\IncursionItemSpawner\\ItemCheatWindow.xaml",
               "RelativeToolTip": "IncursionItemSpawner\\ItemCheatWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-03-13T13:58:18.031Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-13T13:58:18.031Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "ItemCheatWindow.xaml.cs",
               "DocumentMoniker": "E:\\Programmieren\\IncursionItemSpawner\\IncursionItemSpawner\\IRRModMenu\\IncursionItemSpawner\\ItemCheatWindow.xaml.cs",
               "RelativeDocumentMoniker": "IncursionItemSpawner\\ItemCheatWindow.xaml.cs",
@@ -124,12 +123,11 @@
               "RelativeToolTip": "IncursionItemSpawner\\ItemCheatWindow.xaml.cs",
               "ViewState": "AQIAAAcAAAAAAAAAAAAAABUAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T13:53:12.855Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-13T13:53:12.855Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "E:\\Programmieren\\IncursionItemSpawner\\IncursionItemSpawner\\IRRModMenu\\IncursionItemSpawner\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "IncursionItemSpawner\\MainWindow.xaml.cs",
@@ -137,20 +135,18 @@
               "RelativeToolTip": "IncursionItemSpawner\\MainWindow.xaml.cs",
               "ViewState": "AQIAABkAAAAAAAAAAADgvzIAAABMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T13:52:57.292Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-13T13:52:57.292Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "E:\\Programmieren\\IncursionItemSpawner\\IncursionItemSpawner\\IRRModMenu\\IncursionItemSpawner\\MainWindow.xaml",
               "RelativeDocumentMoniker": "IncursionItemSpawner\\MainWindow.xaml",
               "ToolTip": "E:\\Programmieren\\IncursionItemSpawner\\IncursionItemSpawner\\IRRModMenu\\IncursionItemSpawner\\MainWindow.xaml",
               "RelativeToolTip": "IncursionItemSpawner\\MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-03-13T13:48:33.638Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-13T13:48:33.638Z"
             },
             {
               "$type": "Document",
@@ -162,8 +158,7 @@
               "RelativeToolTip": "IncursionItemSpawner\\items.txt",
               "ViewState": "AQIAAEECAAAAAAAAAAAAAEoCAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2026-03-13T13:44:33.853Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-13T13:44:33.853Z"
             }
           ]
         }

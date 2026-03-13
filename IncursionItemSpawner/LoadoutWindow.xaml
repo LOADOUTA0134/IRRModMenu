@@ -54,8 +54,6 @@
                 <ComboBox x:Name="MagazineBox" Grid.Row="1" Grid.Column="1" Margin="5,0,0,0" Text="Magazine"/>
             </Grid>
 
-            <ui:TextBox x:Name="AttachmentsBox" PlaceholderText="Other IDs (Misc, separated by commas)" Margin="0,15,0,0"/>
-
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,25,0,0">
                 <ui:Button Content="SAVE LOADOUT" Appearance="Secondary" Click="Save_Click" Margin="0,0,15,0" BorderBrush="White"/>
                 <ui:Button Content="GENERATE" Appearance="Primary" Click="Generate_Click" BorderBrush="White"/>
