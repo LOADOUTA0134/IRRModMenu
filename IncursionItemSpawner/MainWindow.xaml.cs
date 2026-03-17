@@ -59,7 +59,8 @@ namespace IncursionItemSpawner
         {
             // Jetzt enthält MyItemList die Daten aus der Textdatei
             var loadoutWindow = new LoadoutWindow(this.MyItemList);
-            loadoutWindow.Show();
+            if (loadoutWindow.ShowDialog() == true)
+                GameCommandRunner.TrySendCommand(loadoutWindow.GeneratedCommand);
         }
 
         private void OpenFactions_Click(object sender, RoutedEventArgs e)

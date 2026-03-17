@@ -2,7 +2,6 @@
 using System.Collections.Generic;
 using System.Windows;
 using System.Diagnostics;
-using System.Runtime.InteropServices;
 using System.IO;
 using System.Linq;
 using System.Windows.Forms; // Für SendKeys
@@ -20,9 +19,6 @@ namespace IncursionItemSpawner
     public partial class ItemCheatWindow : Window
     {
         public List<Item> MyItemList { get; set; } = new List<Item>();
-
-        [DllImport("user32.dll")]
-        static extern bool SetForegroundWindow(System.IntPtr hWnd);
         public ItemCheatWindow(List<Item> myItemList)
         {
             InitializeComponent();
@@ -114,21 +110,8 @@ namespace IncursionItemSpawner
             string itemName = ItemList.SelectedItem.ToString();
             if (!int.TryParse(AmountBox.Text, out int amount)) amount = 1;
 
-            var processes = Process.GetProcessesByName("Test_C-Win64-Shipping");
-            if (processes.Length == 0)
-            {
-                System.Windows.MessageBox.Show("Game not running");
-                return;
-            }
-
-            SetForegroundWindow(processes[0].MainWindowHandle);
-
             string commandToSend = GetCommandForAction(itemName, amount);
-
-            SendKeys.SendWait("{F10}");
-            System.Threading.Thread.Sleep(250);
-            SendKeys.SendWait(commandToSend);
-            SendKeys.SendWait("{ENTER}");
+            GameCommandRunner.TrySendCommand(commandToSend);
         }
 
         private void CreateLoadout(object sender, RoutedEventArgs e)
@@ -138,17 +121,7 @@ namespace IncursionItemSpawner
             if (loadoutDesigner.ShowDialog() == true)
             {
                 string finalCommand = loadoutDesigner.GeneratedCommand;
-
-                // Sofort-Ausführung für das Loadout
-                var processes = Process.GetProcessesByName("Test_C-Win64-Shipping");
-                if (processes.Length > 0)
-                {
-                    SetForegroundWindow(processes[0].MainWindowHandle);
-                    SendKeys.SendWait("{F10}");
-                    System.Threading.Thread.Sleep(250);
-                    SendKeys.SendWait(finalCommand);
-                    SendKeys.SendWait("{ENTER}");
-                }
+                GameCommandRunner.TrySendCommand(finalCommand);
             }
         }
     }

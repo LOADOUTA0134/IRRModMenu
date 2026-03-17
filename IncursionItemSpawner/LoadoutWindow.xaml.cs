@@ -93,7 +93,6 @@ namespace IncursionItemSpawner
             var selectedIds = new List<string>();
             ComboBox[] boxes = { HelmetBox, RigBox, BackpackBox, WeaponBox, MuzzleBox, GripBox, OpticBox, MagazineBox };
 
-            // 1. Items aus den ComboBoxen sammeln und mit :1 versehen
             foreach (var box in boxes)
             {
                 if (box.SelectedItem != null)

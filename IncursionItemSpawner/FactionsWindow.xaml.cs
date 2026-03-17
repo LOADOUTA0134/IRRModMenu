@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Diagnostics;
-using System.Runtime.InteropServices;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Forms;
@@ -10,9 +9,6 @@ namespace IncursionItemSpawner
 {
     public partial class FactionsWindow : Window
     {
-        [DllImport("user32.dll")]
-        static extern bool SetForegroundWindow(IntPtr hWnd);
-
         public FactionsWindow()
         {
             InitializeComponent();
@@ -47,15 +43,6 @@ namespace IncursionItemSpawner
 
         private void ExecuteFactionCommand(string faction, int level)
         {
-            var processes = Process.GetProcessesByName("Test_C-Win64-Shipping");
-            if (processes.Length == 0)
-            {
-                System.Windows.MessageBox.Show("Game not running!");
-                return;
-            }
-
-            SetForegroundWindow(processes[0].MainWindowHandle);
-
             if (level == 1) level = 24;
             else if (level == 2) level = 49;
             else if (level == 3) level = 74;
@@ -63,11 +50,7 @@ namespace IncursionItemSpawner
             else level = 0;
 
             string command = $"setFactionReputation {level} {faction}";
-
-            SendKeys.SendWait("{F10}");
-            System.Threading.Thread.Sleep(250);
-            SendKeys.SendWait(command);
-            SendKeys.SendWait("{ENTER}");
+            GameCommandRunner.TrySendCommand(command);
         }
 
 
