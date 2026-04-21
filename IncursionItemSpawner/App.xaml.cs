@@ -9,6 +9,7 @@ namespace IncursionItemSpawner
     /// </summary>
     public partial class App : Application
     {
+
     }
 
 }

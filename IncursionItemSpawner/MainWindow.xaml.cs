@@ -15,10 +15,15 @@ namespace IncursionItemSpawner
         {
             InitializeComponent();
 
-            ApplicationThemeManager.ApplySystemTheme(updateAccent: true);
-            ApplicationThemeManager.Apply(ApplicationTheme.Dark, WindowBackdropType.Mica);
+            if (Environment.OSVersion.Version.Build >= 22000)
+            {
+                ApplicationThemeManager.Apply(ApplicationTheme.Dark, WindowBackdropType.Mica);
+            }
+            else
+            {
+                ApplicationThemeManager.Apply(ApplicationTheme.Dark);
+            }
 
-            // ZUERST laden, damit MyItemList nicht leer ist
             LoadItems();
         }
 
@@ -50,14 +55,12 @@ namespace IncursionItemSpawner
 
         private void OpenItemSpawner_Click(object sender, RoutedEventArgs e)
         {
-            // Auch hier die Liste übergeben, sonst ist sie dort ebenfalls leer
             var itemWindow = new ItemCheatWindow(this.MyItemList);
             itemWindow.Show();
         }
 
         private void OpenLoadout_Click(object sender, RoutedEventArgs e)
         {
-            // Jetzt enthält MyItemList die Daten aus der Textdatei
             var loadoutWindow = new LoadoutWindow(this.MyItemList);
             if (loadoutWindow.ShowDialog() == true)
                 GameCommandRunner.TrySendCommand(loadoutWindow.GeneratedCommand);
@@ -66,6 +69,11 @@ namespace IncursionItemSpawner
         private void OpenFactions_Click(object sender, RoutedEventArgs e)
         {
             new FactionsWindow().Show();
+        }
+
+        private void OpenSafehouse_Click(object sender, RoutedEventArgs e)
+        {
+            new SafehouseWindow().Show();
         }
     }
 }

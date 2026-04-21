@@ -1,0 +1,151 @@
+﻿<Window x:Class="IncursionItemSpawner.SafehouseWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
+        Title="Safehouse Upgrades" Height="750" Width="550"
+        Background="Transparent" WindowStartupLocation="CenterOwner">
+
+    <Grid Margin="20">
+        <ScrollViewer VerticalScrollBarVisibility="Auto">
+            <StackPanel Margin="0,0,15,0">
+                <TextBlock Text="SAFEHOUSE UPGRADES" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,15"/>
+
+                <ui:Card Padding="10" Margin="0,0,0,5">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="120"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="30"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="Intel" VerticalAlignment="Center" FontSize="14" FontWeight="SemiBold"/>
+                        <Slider x:Name="IntelSlider" TickPlacement="BottomRight" Grid.Column="1" Minimum="0" Maximum="3" Value="0" TickFrequency="1" IsSnapToTickEnabled="True" Margin="10,0"/>
+                        <TextBlock Grid.Column="2" Text="{Binding ElementName=IntelSlider, Path=Value}" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold"/>
+                        <ui:Button Grid.Column="3" Content="SET" Click="Upgrade_Click" Tag="Intel" Appearance="Primary"/>
+                    </Grid>
+                </ui:Card>
+
+                <ui:Card Padding="10" Margin="0,0,0,5">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="120"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="30"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="Stash" VerticalAlignment="Center" FontSize="14" FontWeight="SemiBold"/>
+                        <Slider x:Name="StashSlider" TickPlacement="BottomRight" Grid.Column="1" Minimum="0" Maximum="4" Value="0" TickFrequency="1" IsSnapToTickEnabled="True" Margin="10,0"/>
+                        <TextBlock Grid.Column="2" Text="{Binding ElementName=StashSlider, Path=Value}" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold"/>
+                        <ui:Button Grid.Column="3" Content="SET" Click="Upgrade_Click" Tag="Stash" Appearance="Primary"/>
+                    </Grid>
+                </ui:Card>
+
+                <ui:Card Padding="10" Margin="0,0,0,5">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="120"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="30"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="Generator" VerticalAlignment="Center" FontSize="14" FontWeight="SemiBold"/>
+                        <Slider x:Name="GeneratorSlider" TickPlacement="BottomRight" Grid.Column="1" Minimum="0" Maximum="2" Value="0" TickFrequency="1" IsSnapToTickEnabled="True" Margin="10,0"/>
+                        <TextBlock Grid.Column="2" Text="{Binding ElementName=GeneratorSlider, Path=Value}" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold"/>
+                        <ui:Button Grid.Column="3" Content="SET" Click="Upgrade_Click" Tag="Generator" Appearance="Primary"/>
+                    </Grid>
+                </ui:Card>
+
+                <ui:Card Padding="10" Margin="0,0,0,5">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="120"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="30"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="Gunsmith" VerticalAlignment="Center" FontSize="14" FontWeight="SemiBold"/>
+                        <Slider x:Name="GunsmithSlider" TickPlacement="BottomRight" Grid.Column="1" Minimum="0" Maximum="3" Value="0" TickFrequency="1" IsSnapToTickEnabled="True" Margin="10,0"/>
+                        <TextBlock Grid.Column="2" Text="{Binding ElementName=GunsmithSlider, Path=Value}" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold"/>
+                        <ui:Button Grid.Column="3" Content="SET" Click="Upgrade_Click" Tag="Gunsmith" Appearance="Primary"/>
+                    </Grid>
+                </ui:Card>
+
+                <ui:Card Padding="10" Margin="0,0,0,5">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="120"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="30"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="Lightning" VerticalAlignment="Center" FontSize="14" FontWeight="SemiBold"/>
+                        <Slider x:Name="LightningSlider" TickPlacement="BottomRight" Grid.Column="1" Minimum="0" Maximum="2" Value="0" TickFrequency="1" IsSnapToTickEnabled="True" Margin="10,0"/>
+                        <TextBlock Grid.Column="2" Text="{Binding ElementName=LightningSlider, Path=Value}" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold"/>
+                        <ui:Button Grid.Column="3" Content="SET" Click="Upgrade_Click" Tag="Lightning" Appearance="Primary"/>
+                    </Grid>
+                </ui:Card>
+
+                <ui:Card Padding="10" Margin="0,0,0,5">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="120"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="30"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="Repair" VerticalAlignment="Center" FontSize="14" FontWeight="SemiBold"/>
+                        <Slider x:Name="RepairSlider" TickPlacement="BottomRight" Grid.Column="1" Minimum="0" Maximum="2" Value="0" TickFrequency="1" IsSnapToTickEnabled="True" Margin="10,0"/>
+                        <TextBlock Grid.Column="2" Text="{Binding ElementName=RepairSlider, Path=Value}" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold"/>
+                        <ui:Button Grid.Column="3" Content="SET" Click="Upgrade_Click" Tag="Repair" Appearance="Primary"/>
+                    </Grid>
+                </ui:Card>
+
+                <ui:Card Padding="10" Margin="0,0,0,5">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="120"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="30"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="Terminal" VerticalAlignment="Center" FontSize="14" FontWeight="SemiBold"/>
+                        <Slider x:Name="TerminalSlider" TickPlacement="BottomRight" Grid.Column="1" Minimum="0" Maximum="1" Value="0" TickFrequency="1" IsSnapToTickEnabled="True" Margin="10,0"/>
+                        <TextBlock Grid.Column="2" Text="{Binding ElementName=TerminalSlider, Path=Value}" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold"/>
+                        <ui:Button Grid.Column="3" Content="SET" Click="Upgrade_Click" Tag="Terminal" Appearance="Primary"/>
+                    </Grid>
+                </ui:Card>
+
+                <ui:Card Padding="10" Margin="0,0,0,5">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="120"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="30"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="Structure" VerticalAlignment="Center" FontSize="14" FontWeight="SemiBold"/>
+                        <Slider x:Name="StructureSlider" TickPlacement="BottomRight" Grid.Column="1" Minimum="0" Maximum="2" Value="0" TickFrequency="1" IsSnapToTickEnabled="True" Margin="10,0"/>
+                        <TextBlock Grid.Column="2" Text="{Binding ElementName=StructureSlider, Path=Value}" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold"/>
+                        <ui:Button Grid.Column="3" Content="SET" Click="Upgrade_Click" Tag="Structure" Appearance="Primary"/>
+                    </Grid>
+                </ui:Card>
+
+                <ui:Card Padding="10" Margin="0,0,0,5">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="120"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="30"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock Text="Shooting Range" VerticalAlignment="Center" FontSize="14" FontWeight="SemiBold"/>
+                        <Slider x:Name="ShootingRangeSlider" TickPlacement="BottomRight" Grid.Column="1" Minimum="0" Maximum="2" Value="0" TickFrequency="1" IsSnapToTickEnabled="True" Margin="10,0"/>
+                        <TextBlock Grid.Column="2" Text="{Binding ElementName=ShootingRangeSlider, Path=Value}" VerticalAlignment="Center" HorizontalAlignment="Center" FontWeight="Bold"/>
+                        <ui:Button Grid.Column="3" Content="SET" Click="Upgrade_Click" Tag="ShootingRange" Appearance="Primary"/>
+                    </Grid>
+                </ui:Card>
+
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Window>

@@ -2,12 +2,51 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:ui="http://schemas.lepo.co/wpfui/2022/xaml"
-        Title="Incursion Menu" Height="300" Width="400">
-    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
-        <TextBlock Text="CHOOSE FUNCTION" FontSize="20" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,20"/>
+        Title="Incursion Menu" Height="500" Width="400"
+        Background="Transparent">
 
-        <ui:Button Content="ITEM CHEAT" Icon="Box24" Width="200" Height="50" Click="OpenItemSpawner_Click"/>
-        <ui:Button Content="LOADOUT DESIGNER" Icon="Shield24" Width="200" Height="50" Click="OpenLoadout_Click"/>
-        <ui:Button Content="FACTIONS" Icon="People24" Width="200" Height="50" Click="OpenFactions_Click"/>
-    </StackPanel>
+    <Grid Margin="20">
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+
+            <TextBlock Text="CHOOSE FUNCTION"
+                       FontSize="20"
+                       FontWeight="Bold"
+                       Foreground="White"
+                       HorizontalAlignment="Center"
+                       Margin="0,0,0,20"/>
+
+            <ui:Button Content="ITEM CHEAT"
+                       Icon="Box24"
+                       Width="220"
+                       Height="50"
+                       Margin="0,5"
+                       Click="OpenItemSpawner_Click"
+                       Appearance="Primary"/>
+
+            <ui:Button Content="LOADOUT DESIGNER"
+                       Icon="Shield24"
+                       Width="220"
+                       Height="50"
+                       Margin="0,5"
+                       Click="OpenLoadout_Click"
+                       Appearance="Primary"/>
+
+            <ui:Button Content="FACTIONS"
+                       Icon="People24"
+                       Width="220"
+                       Height="50"
+                       Margin="0,5"
+                       Click="OpenFactions_Click"
+                       Appearance="Primary"/>
+
+            <ui:Button Content="SAFEHOUSE"
+                       Icon="People24"
+                       Width="220"
+                       Height="50"
+                       Margin="0,5"
+                       Click="OpenSafehouse_Click"
+                       Appearance="Primary"/>
+
+        </StackPanel>
+    </Grid>
 </Window>
